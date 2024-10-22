@@ -8,6 +8,11 @@ stage('Cloning Git')
     checkout scm
 }
 
+stage('SNYK-SAST-SCA-TEST')
+{
+     echo "SNYK-SAST-SCA-TEST"   
+}
+    
 stage('Build-and-Tag')
 {
     /* This builds the actual image; 
